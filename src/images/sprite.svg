@@ -1,0 +1,13 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><defs>
+
+<symbol id="icon-vector" viewBox="0 0 22 32"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M3.321 3.2 18.295 16 3.321 28.8"/></symbol>
+
+<symbol id="icon-arrow" viewBox="0 0 8 8"><path d="M6.469 3.6 4.041 1.172l.566-.566L8.001 4 4.607 7.394l-.566-.566L6.469 4.4H0v-.8z"/></symbol>
+
+<symbol id="icon-mobile" viewBox="0 0 48 32"><path d="M0 5.333V0h48v5.333H0zm0 13.334h48v-5.333H0v5.333zM0 32h48v-5.333H0V32z"/></symbol>
+
+<symbol id="icon-close" viewBox="0 0 32 32"><path d="M31.439 3.166 28.273 0 15.72 12.553 3.167 0 .001 3.166l12.553 12.553L.001 28.272l3.166 3.166L15.72 18.885l12.553 12.553 3.166-3.166-12.553-12.553L31.439 3.166z"/></symbol>
+
+
+
+</defs></svg>

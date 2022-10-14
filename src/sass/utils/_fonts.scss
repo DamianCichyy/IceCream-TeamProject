@@ -1,0 +1,56 @@
+/* Font Family */
+$primary-font-family: "DM Sans", sans-serif;
+$secondary-font-family: "Titan One", sans-serif;
+
+/* Font Weight */
+$font-weight: (
+  "primary": 400,
+  "bold": 700,
+  "medium": 500,
+);
+
+/* Font Size All Devices */
+$font-size: (
+  "primary": 16px,
+  "secondary": 14px,
+);
+
+/* Font Size Desktop */
+$font-size-desktop: (
+  "biggest": 58px,
+  "big": 46px,
+  "medium": 38px,
+  "small": 30px,
+  "smallest": 20px,
+);
+
+/* Font Size Tablets*/
+$font-size-tablet: (
+  "biggest": 48px,
+  "bigger": 34px,
+  "big": 28px,
+  "medium": 26px,
+  "small": 22px,
+  "smaller": 20px,
+  "smallest": 8px,
+);
+
+/* Font Size Smartphones*/
+$font-size-mobile: (
+  "huge": 48px,
+  "biggest": 36px,
+  "bigger": 34px,
+  "big": 26px,
+  "medium": 20px,
+  "small": 18px,
+  "smalleer": 12px,
+  "smallest": 8px,
+);
+
+/* Letter Spacing */
+$letter-spacing: (
+  "primary": 0.04em,
+  "big": 0.06em,
+  "medium": 0.04em,
+  "small": 0.02em,
+);
