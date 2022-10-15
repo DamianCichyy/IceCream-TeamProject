@@ -1,5 +1,5 @@
 .customer-review {
-  padding: 0 20px;
+  padding: 80px 20px;
   max-width: 100%;
   font-family: $primary-font-family;
   font-weight: map-get($font-weight, medium);
@@ -29,7 +29,6 @@
 
   &__person {
     @include flex-column;
-    gap: 18px;
   }
 
   &__dots {
@@ -47,21 +46,46 @@
 
   &__person-name {
     font-size: map-get($font-size, secondary);
+    padding-top: 18px;
+  }
+
+  &__slide-dots {
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    li {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #d9d9d9;
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .customer-review {
-    padding: 0 74px;
+    padding: 120px 74px;
+
+    &__text {
+      font-size: map-get($font-size, secondary);
+      padding: 45px 80px 34px 80px;
+    }
+
+    &__person-name {
+      font-size: map-get($font-size, primary);
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
   .customer-review {
-    padding: 0 176px;
+    padding: 120px 176px;
 
     &__text {
       font-size: map-get($font-size, primary);
+      padding: 45px 88px 35px 88px;
     }
 
     &__person-name {
