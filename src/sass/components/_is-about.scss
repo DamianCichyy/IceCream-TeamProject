@@ -11,13 +11,13 @@ padding: 125px 20px 40px;
 }
 }
 .about__section {
-    background:$dark-pink;
+    background: dark-pink;
     @media screen and (max-width: 767px) {
-    background-image: url("../src/images/about-iza/mobile/background__mobile.png");
+    background-image: url("../images/is-about/mobile/background__mobile.png");
     background-repeat: no-repeat;
     background-position: 0 85%;}
     @media screen and (min-width: 1200px) {
-        background-image: url("../src/images/about-iza/desktop/background_desktop.png");
+        background-image: url("../images/is-about/desktop/background_desktop.png");
         background-repeat: no-repeat;
         background-position: 0 95%;
         background-size: contain; 
@@ -38,13 +38,13 @@ padding: 125px 20px 40px;
     font-family: Titan One,cursive;
     font-size: 18px;
     line-height: 1.17;
-    color: $dark-pink;
+    color: dark-pink;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 .about__title {
     font-family: Titan One,cursive;
-    color:$red;
+    color: red;
     font-size: 34px;
     line-height: 1.18;
     text-align: center;
@@ -62,7 +62,7 @@ padding: 125px 20px 40px;
         justify-content: space-between;
     }
 }
-img {
+.img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -104,7 +104,7 @@ img {
     line-height: 1.58;
     margin-left: auto;
     margin-right: auto;
-    color:$grey;
+    color:gray;
     @media screen and (min-width: 768px){
     display: block;
     margin: 0 0 62px;
@@ -117,15 +117,15 @@ img {
 }
 .button-about {
     width: 176px;
-    color:$red;
+    color:red;
     border: none;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 44px;
     padding: 0 17px;
-    cursor: pointer;
-    background:$white;
+    // cursor: pointer;
+    background:white;
     border-radius: 22px;
     width: 176px;
     font-family: 'DM Sans';
