@@ -779,4 +779,7 @@ img {
   .products__item--milkshakes::before {
     background-image: url("../images/products/home-pic3-desktop@2x.png");
   }
+}
+.gallery__title {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
