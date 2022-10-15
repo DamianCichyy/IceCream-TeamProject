@@ -1,0 +1,71 @@
+.customer-review {
+  padding: 0 20px;
+  max-width: 100%;
+  font-family: $primary-font-family;
+  font-weight: map-get($font-weight, medium);
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    @include flex-column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__item:not(:first-of-type) {
+    display: none;
+  }
+
+  &__text {
+    background-color: #fafafa;
+    padding: 40px 62px 25px 62px;
+    text-align: center;
+    @include flex-column;
+    font-size: map-get($font-size-mobile, smalleer);
+    line-height: 31px;
+  }
+
+  &__person {
+    @include flex-column;
+    gap: 18px;
+  }
+
+  &__dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    li {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #c7113e;
+    }
+  }
+
+  &__person-name {
+    font-size: map-get($font-size, secondary);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer-review {
+    padding: 0 74px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .customer-review {
+    padding: 0 176px;
+
+    &__text {
+      font-size: map-get($font-size, primary);
+    }
+
+    &__person-name {
+      font-size: map-get($font-size-desktop, smallest);
+    }
+  }
+}

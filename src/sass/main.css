@@ -779,4 +779,68 @@ img {
   .products__item--milkshakes::before {
     background-image: url("../images/products/home-pic3-desktop@2x.png");
   }
+}
+.customer-review {
+  padding: 0 20px;
+  max-width: 100%;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+.customer-review__list {
+  list-style: none;
+}
+.customer-review__item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.customer-review__item:not(:first-of-type) {
+  display: none;
+}
+.customer-review__text {
+  background-color: #fafafa;
+  padding: 40px 62px 25px 62px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 31px;
+}
+.customer-review__person {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.customer-review__dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.customer-review__dots li {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #c7113e;
+}
+.customer-review__person-name {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-review {
+    padding: 0 74px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer-review {
+    padding: 0 176px;
+  }
+  .customer-review__text {
+    font-size: 16px;
+  }
+  .customer-review__person-name {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
