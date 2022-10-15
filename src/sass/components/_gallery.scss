@@ -1,6 +1,18 @@
 .gallery {
-&__title{
-    display: none;
+  padding: 97px 0 80px 0;
+  &__img {
+    width: 100vw;
+  }
 }
 
+@media (min-width: 768px) {
+  .gallery {
+    padding: 140px 0 121px 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .gallery {
+    padding: 139px 0 123px 0;
+  }
 }
