@@ -1,0 +1,138 @@
+.about {
+    
+    position: relative;
+    
+ @media screen and (max-width: 767px) {
+padding: 125px 20px 40px; 
+}
+@media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+}
+}
+.about__section {
+    background:$dark-pink;
+    @media screen and (max-width: 767px) {
+    background-image: url("../src/images/about-iza/mobile/background__mobile.png");
+    background-repeat: no-repeat;
+    background-position: 0 85%;}
+    @media screen and (min-width: 1200px) {
+        background-image: url("../src/images/about-iza/desktop/background_desktop.png");
+        background-repeat: no-repeat;
+        background-position: 0 95%;
+        background-size: contain; 
+    }
+}
+
+.container-about {
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+}
+.about__label {
+    display: block;
+    text-align: center;
+    font-family: Titan One,cursive;
+    font-size: 18px;
+    line-height: 1.17;
+    color: $dark-pink;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.about__title {
+    font-family: Titan One,cursive;
+    color:$red;
+    font-size: 34px;
+    line-height: 1.18;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+.about__content {
+    @media screen and (max-width: 767px) {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.about__text {
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+        margin-right: 0;
+    margin-top: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 463px;  
+    }
+}
+.about__text--modifier {
+    font-family: DM Sans,sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 47px;
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin: 0 0 50px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        max-width: 100%;
+} 
+}
+.about__second-text {
+    margin-bottom: 47px;
+    font-family: DM Sans,sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    margin-left: auto;
+    margin-right: auto;
+    color:$grey;
+    @media screen and (min-width: 768px){
+    display: block;
+    margin: 0 0 62px;
+    max-width: 340px;
+    font-size: 14px;
+}
+@media screen and (min-width: 1200px){
+    max-width: 100%;
+}
+}
+.button-about {
+    width: 176px;
+    color:$red;
+    border: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 44px;
+    padding: 0 17px;
+    cursor: pointer;
+    background:$white;
+    border-radius: 22px;
+    width: 176px;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+text-align: center;
+}
