@@ -1,0 +1,132 @@
+.customer-review {
+  padding: 80px 20px;
+  max-width: 100%;
+  font-family: $primary-font-family;
+  font-weight: map-get($font-weight, medium);
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    @include flex-column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__item:not(:first-of-type) {
+    display: none;
+  }
+
+  &__text-container {
+    padding: 40px 62px 25px 62px;
+    background-color: #fafafa;
+    text-align: center;
+    position: relative;
+  }
+
+  &__quote-icon {
+    width: 54px;
+    height: 40px;
+    fill: #e1e1e1;
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    z-index: 1;
+  }
+
+  &__text {
+    @include flex-column;
+    background: repeating-linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0) 29px,
+      #e1e1e1 29px,
+      #e1e1e1 30px
+    );
+    position: relative;
+    z-index: 2;
+    font-size: map-get($font-size-mobile, smalleer);
+    line-height: 31px;
+  }
+
+  &__person {
+    @include flex-column;
+  }
+
+  &__dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    li {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #c7113e;
+    }
+  }
+
+  &__person-name {
+    font-size: map-get($font-size, secondary);
+    padding-top: 18px;
+  }
+
+  &__slide-dots {
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    li {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #d9d9d9;
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    fill: #d31342;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer-review {
+    padding: 120px 74px;
+
+    &__text-container {
+      padding: 45px 80px 34px 80px;
+    }
+
+    &__text {
+      font-size: map-get($font-size, secondary);
+    }
+
+    &__person-name {
+      font-size: map-get($font-size, primary);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .customer-review {
+    padding: 120px 176px;
+
+    &__text-container {
+      padding: 45px 88px 35px 88px;
+    }
+
+    &__text {
+      font-size: map-get($font-size, primary);
+    }
+
+    &__person-name {
+      font-size: map-get($font-size-desktop, smallest);
+    }
+  }
+}
