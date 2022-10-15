@@ -3,10 +3,11 @@
  * Wszystkie partials podłączamy tutaj.
  */
 
-@import "./utils/colors";
-@import "./utils/fonts";
-@import "./utils/mixins";
-@import "./utils/resets";
-@import "./utils/global";
-@import "./components/header";
-@import "./components/mobile-menu";
+@import './utils/colors';
+@import './utils/fonts';
+@import './utils/mixins';
+@import './utils/resets';
+@import './utils/global';
+@import './components/header';
+@import './components/mobile-menu';
+@import './components/contacts';
