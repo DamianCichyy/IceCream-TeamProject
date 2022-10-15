@@ -1,0 +1,114 @@
+.page-container {
+  background-color: $bgcolor-contacts;
+}
+.header-hidden {
+  display: none;
+}
+.grid-container__card {
+  width: 220px;
+  height: 427px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  background-color: $white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+.grid-container__card-list {
+  padding: 25px 21px 43px 20px;
+}
+.header-card {
+  font-family: $primary-font-family;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  color: $black;
+}
+.header-card-caffe::before {
+  margin: 43px 120px 25px 0;
+  width: 80px;
+  height: 16px;
+  background-color: $beige;
+  content: 'CAFE';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-family: $primary-font-family;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  border-radius: 4px;
+}
+.header-card-foodtruck::before {
+  margin: 43px 120px 25px 0;
+  width: 130px;
+  height: 16px;
+  background-color: $green;
+  content: 'FOODTRUCK';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-family: $primary-font-family;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  border-radius: 4px;
+}
+.grid-container__card-list-description {
+  margin-top: 10px;
+  font-family: $primary-font-family;
+  color: $grey;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+.grid-container__border-bottom {
+  border-bottom: 1px solid $light-grey;
+  margin: 25px 0 25px;
+}
+.open-days {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: $black;
+}
+.open-hours {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: $dark-pink;
+}
+.btn-locations {
+  width: 161.45px;
+  height: 44px;
+  background-color: $button-red;
+  border-radius: 22px;
+  color: $white;
+  border-style: none;
+  font-family: $primary-font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-franchise {
+  width: 161px;
+  height: 44px;
+  background-color: $white;
+  font-family: $primary-font-family;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21;
+  color: $red;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
