@@ -658,9 +658,9 @@ img {
   background-color: #ffb8ca;
 }
 .products__item--ice-cream::before {
-  content: "";
+  content: url("../images/products/home-pic1-mobile.png");
   position: absolute;
-  background-image: url("../images/products/home-pic1-mobile.png");
+  top: -210px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {

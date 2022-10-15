@@ -21,9 +21,12 @@
   background-color: $pink;
 
   &::before {
-    content: '';
+    content:url('../images/products/home-pic1-mobile.png');
     position: absolute;
-    background-image: url('../images/products/home-pic1-mobile.png');
+    // background-image: ;
+//     width: 335px;
+// height: 335px; 
+top: -210px; 
   }
 }
 
