@@ -737,7 +737,7 @@ img {
   margin-bottom: 30px;
 }
 .products__subtitle::after {
-  content: url("./images/products/sprite.svg#icon-Group-4");
+  content: url("./images/products/Group.png");
   width: 26px;
   height: 6px;
   margin-bottom: 30px;
