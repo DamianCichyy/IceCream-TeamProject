@@ -3,6 +3,12 @@
   &__img {
     width: 100vw;
   }
+  background-image: linear-gradient(
+    to top,
+    $white 55%,
+    $light-pink 45%,
+  
+  );
 }
 
 @media (min-width: 768px) {
