@@ -636,6 +636,7 @@ img {
     fill: #d41443;
   }
 }
+
 .products__tag {
   color: #ffa5ba;
   font-family: "Titan One", sans-serif;
@@ -796,5 +797,148 @@ img {
 @media (min-width: 1280px) {
   .gallery {
     padding: 139px 0 123px 0;
+=======
+.advantages {
+  min-width: 320px;
+  max-width: 1980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff5f6;
+}
+.advantages__container-bucket {
+  margin-left: 20px;
+  margin-top: 39px;
+}
+.advantages__container-apples {
+  margin-left: 20px;
+  margin-top: 39px;
+  margin-bottom: 38px;
+}
+.advantages__container-heart {
+  margin-left: 20px;
+  margin-bottom: 97px;
+}
+.advantages__icon {
+  margin-bottom: 16px;
+}
+.advantages__numbers {
+  font-family: "Titan One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.advantages__text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+  width: 230px;
+  margin-top: 13px;
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff5f6;
+    gap: 60px;
+  }
+  .advantages__container-bucket {
+    margin: 0;
+    margin-left: 36px;
+    margin-top: 66px;
+    margin-bottom: 136px;
+  }
+  .advantages__container-apples {
+    margin: 0;
+    margin-top: 66px;
+    margin-bottom: 136px;
+  }
+  .advantages__container-heart {
+    margin: 0;
+    margin-right: 76px;
+    margin-top: 66px;
+    margin-bottom: 136px;
+  }
+  .advantages__icon {
+    margin-bottom: 36px;
+  }
+  .advantages__numbers {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+  .advantages__text {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    width: 180px;
+    margin-top: 13px;
+  }
+}
+@media (min-width: 1280px) {
+  .advantages {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff5f6;
+    gap: 30px;
+  }
+  .advantages__container-bucket {
+    margin: 0;
+    margin-left: 115px;
+    margin-top: 39px;
+    margin-bottom: 139px;
+  }
+  .advantages__container-apples {
+    margin: 0;
+    margin-top: 39px;
+    margin-bottom: 139px;
+  }
+  .advantages__container-heart {
+    margin: 0;
+    margin-right: 115px;
+    margin-top: 39px;
+    margin-bottom: 139px;
+  }
+  .advantages__icon {
+    margin-bottom: 40px;
+  }
+  .advantages__numbers {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+  .advantages__text {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    width: 330px;
+    margin-top: 15px;
+
   }
 }/*# sourceMappingURL=main.css.map */
