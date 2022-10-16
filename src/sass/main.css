@@ -803,6 +803,7 @@ img {
     background-image: url("../images/is-about/mobile/background__mobile.png");
     background-repeat: no-repeat;
     background-position: 0 85%;
+    background-size: contain;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -875,12 +876,6 @@ img {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  .about__text {
-    width: 463px;
-  }
-}
-
 .about__text--modifier {
   font-family: DM Sans, sans-serif;
   font-weight: 500;
@@ -955,12 +950,9 @@ img {
   display: flex;
   text-align: center;
 }
-
-.about-button-svg {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 10px;
-  height: 44px;
+.button-about-svg {
   fill: #d41443;
+  width: 4.43px;
+  height: 8px;
+  display: inline-block;
 }/*# sourceMappingURL=main.css.map */
