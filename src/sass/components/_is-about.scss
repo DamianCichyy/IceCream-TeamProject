@@ -11,7 +11,7 @@ padding: 125px 20px 40px;
 }
 }
 .about__section {
-    background: dark-pink;
+    background: #FFF5F6;
     @media screen and (max-width: 767px) {
     background-image: url("../images/is-about/mobile/background__mobile.png");
     background-repeat: no-repeat;
@@ -87,9 +87,16 @@ padding: 125px 20px 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 47px;
+    @media screen and (max-width: 767px){
+        max: width 220px;
+    }
+    
     @media screen and (min-width: 768px) {
         display: block;
-        margin: 0 0 50px;
+        margin: 0 0 50px;  
+    max-width: 340px;
+    font-size: 14px;
+
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
@@ -116,6 +123,7 @@ padding: 125px 20px 40px;
 }
 }
 .button-about {
+    
     width: 176px;
     color:red;
     border: none;
@@ -124,7 +132,7 @@ padding: 125px 20px 40px;
     align-items: center;
     height: 44px;
     padding: 0 17px;
-    // cursor: pointer;
+    cursor: pointer;
     background:white;
     border-radius: 22px;
     width: 176px;
@@ -136,3 +144,36 @@ line-height: 18px;
 display: flex;
 text-align: center;
 }
+// &-button {
+//     @include transition-background-color-color;
+//     @include flex;
+//     cursor: pointer;
+//     justify-content: center;
+//     border-style: none;
+//     background-color: $white;
+//     border-radius: 22px;
+//     font-family: $primary-font-family;
+//     font-weight: map-get($font-weight, bold);
+//     font-size: map-get($font-size, primary);
+//     line-height: 1.313;
+//     gap: 16px;
+//     color: $red;
+
+//     &:hover,
+//     &:focus {
+//       background-color: $red;
+//       color: $white;
+//     }
+
+//     &:hover svg,
+//     &:focus svg {
+//       fill: $white;
+//     }
+
+    .about-button-svg {
+      @include transition-fill;
+      width: 10px;
+      height: 44px;
+      fill: $red;
+    }
+  

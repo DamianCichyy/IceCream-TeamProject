@@ -796,7 +796,7 @@ img {
 }
 
 .about__section {
-  background: dark-pink;
+  background: #FFF5F6;
 }
 @media screen and (max-width: 767px) {
   .about__section {
@@ -890,10 +890,17 @@ img {
   margin-right: auto;
   margin-bottom: 47px;
 }
+@media screen and (max-width: 767px) {
+  .about__text--modifier {
+    max: width 220px;
+  }
+}
 @media screen and (min-width: 768px) {
   .about__text--modifier {
     display: block;
     margin: 0 0 50px;
+    max-width: 340px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -936,6 +943,7 @@ img {
   align-items: center;
   height: 44px;
   padding: 0 17px;
+  cursor: pointer;
   background: white;
   border-radius: 22px;
   width: 176px;
@@ -946,4 +954,13 @@ img {
   line-height: 18px;
   display: flex;
   text-align: center;
+}
+
+.about-button-svg {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 10px;
+  height: 44px;
+  fill: #d41443;
 }/*# sourceMappingURL=main.css.map */
