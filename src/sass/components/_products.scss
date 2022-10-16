@@ -106,17 +106,17 @@
   margin-bottom: 30px;
 
   &::after {
-    content: url('./images/products/Group.png');
-    // content: url('./images/products/sprite.svg#icon-Group-4');
+    content: '';
+    background-image: url('./images/products/Group.png');
     width: 26px;
     height: 6px;
-    margin-bottom: 30px;
   }
 }
 .products__description {
   color: $white;
   font-family: $primary-font-family;
   line-height: 1.52;
+  margin-top: 30px;
 }
 
 .products__list {
