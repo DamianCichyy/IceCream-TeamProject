@@ -1,0 +1,25 @@
+.gallery {
+  // padding: 97px 0 80px 0;
+  &__img {
+    width: 100vw;
+  }
+  background-image: linear-gradient(
+    to top,
+    $white 55%,
+    $section-pink 45%,
+  
+  );
+}
+
+// @media (min-width: 768px) {
+//   .gallery {
+//     padding: 140px 0 121px 0;
+//   }
+// }
+
+// @media (min-width: 1280px) {
+//   .gallery {
+//     padding: 139px 0 123px 0;
+//   }
+// }
+// // 
