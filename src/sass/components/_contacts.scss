@@ -155,6 +155,9 @@
     padding-bottom: 86px;
     display: flex;
     justify-content: center;
+    background-image: url('/src/images/contacts/contacts_bg@1x.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .grid-container__card {
     width: 330px;
