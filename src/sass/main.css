@@ -930,7 +930,7 @@ img {
 }
 .gallery {
   padding: 97px 0 80px 0;
-  background-image: linear-gradient(to top, #fff 55%, #FFF5F6 45%);
+  background-image: linear-gradient(to top, #fff 55%, #fff5f6 45%);
 }
 .gallery__img {
   width: 100vw;
@@ -947,7 +947,7 @@ img {
   }
 }
 .footer {
-  background-color: #ffb8ca;
+  background-color: #fff5f6;
 }
 
 .header__logo-header {
@@ -964,4 +964,18 @@ img {
   font-size: 48px;
   color: #d41443;
   line-height: 0.959;
+}
+
+.footer__social-media-icons {
+  display: flex;
+  gap: 40.16px;
+}
+
+.footer__social-media-icon {
+  fill: #fff;
+  background-color: #fea5bb;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 .footer {
-  background-color: $pink;
+  background-color: $section-pink;
 }
 .header__logo-header {
   font-family: 'Titan One', sans-serif;
@@ -14,4 +14,16 @@
   font-size: 48px;
   color: #d41443;
   line-height: 0.959;
+}
+.footer__social-media-icons {
+  display: flex;
+  gap: 40.16px;
+}
+.footer__social-media-icon {
+  fill: $white;
+  background-color: $footer__social-media-icons-bg;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
 }
