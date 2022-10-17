@@ -794,7 +794,6 @@ img {
   .grid-container {
     width: 100%;
     padding-bottom: 81px;
-    margin-left: 18px;
     display: flex;
     justify-content: center;
   }
