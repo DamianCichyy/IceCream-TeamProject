@@ -1,5 +1,5 @@
 .page-container {
-  background-color: $bgcolor-contacts;
+  background: linear-gradient(180deg, $white 7%, $bgcolor-contacts 7%, $bgcolor-contacts 100%);
 }
 .header-hidden {
   display: none;
@@ -136,6 +136,9 @@
   cursor: pointer;
 }
 @media (min-width: 768px) {
+  .page-container {
+    background: linear-gradient(180deg, $white 18%, $bgcolor-contacts 18%, $bgcolor-contacts 100%);
+  }
   .grid-container {
     width: 100%;
     padding-bottom: 81px;
@@ -220,12 +223,14 @@
   }
 }
 @media (min-width: 1280px) {
+  .page-container {
+    background: linear-gradient(180deg, $white 20%, $bgcolor-contacts 20%, $bgcolor-contacts 100%);
+  }
   .grid-container {
     width: 100%;
     padding-bottom: 86px;
     display: flex;
     justify-content: center;
-    background-color: $bgcolor-contacts;
   }
   .grid-container__card {
     width: 330px;

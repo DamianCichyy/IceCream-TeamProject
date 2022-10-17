@@ -637,7 +637,7 @@ img {
   }
 }
 .page-container {
-  background-color: #fff5f6;
+  background: linear-gradient(180deg, #fff 7%, #fff5f6 7%, #fff5f6 100%);
 }
 
 .header-hidden {
@@ -791,6 +791,9 @@ img {
 }
 
 @media (min-width: 768px) {
+  .page-container {
+    background: linear-gradient(180deg, #fff 18%, #fff5f6 18%, #fff5f6 100%);
+  }
   .grid-container {
     width: 100%;
     padding-bottom: 81px;
@@ -875,12 +878,14 @@ img {
   }
 }
 @media (min-width: 1280px) {
+  .page-container {
+    background: linear-gradient(180deg, #fff 20%, #fff5f6 20%, #fff5f6 100%);
+  }
   .grid-container {
     width: 100%;
     padding-bottom: 86px;
     display: flex;
     justify-content: center;
-    background-color: #fff5f6;
   }
   .grid-container__card {
     width: 330px;
