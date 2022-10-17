@@ -3,6 +3,7 @@
  * Wszystkie partials podłączamy tutaj.
  */
 
+
 @import "./utils/colors";
 @import "./utils/fonts";
 @import "./utils/mixins";
@@ -12,3 +13,27 @@
 @import "./components/mobile-menu";
 @import "./components/products";
 @import "./components/is-about";
+
+@import './utils/colors';
+@import './utils/fonts';
+@import './utils/mixins';
+@import './utils/resets';
+@import './utils/global';
+@import './components/header';
+@import './components/mobile-menu';
+
+@import './components/contacts';
+
+@import './components/products';
+// @import './components/is-about';
+@import './components/advantages';
+@import './components/gallery';
+
+// @import './components/customer-review';
+// @import './components/contacts';
+// @import './components/footer';
+
+@import './components/footer';
+
+
+

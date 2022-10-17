@@ -28,7 +28,11 @@ img {
 
 .container {
   min-width: 320px;
+
   max-width: 1980px;
+
+  max-width: 1280px;
+
   margin: 0 auto;
 }
 
@@ -558,7 +562,11 @@ img {
 @media (min-width: 768px) {
   .mobile {
     min-width: 254px;
-    min-height: 1020px;
+
+
+
+
+
     right: 0;
     left: unset;
   }
@@ -636,6 +644,195 @@ img {
     fill: #d41443;
   }
 }
+
+
+
+.page-container {
+  background-color: #fff5f6;
+}
+
+.header-hidden {
+  display: none;
+}
+
+.grid-container__card {
+  width: 220px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.grid-container__card-list {
+  padding: 25px 21px 43px 20px;
+}
+
+.header-card {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  color: #000;
+}
+
+.header-card-caffe::before {
+  margin: 43px 120px 25px 0;
+  width: 80px;
+  height: 16px;
+  background-color: #f0d1a5;
+  content: "CAFE";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  border-radius: 4px;
+}
+
+.header-card-foodtruck::before {
+  margin: 43px 120px 25px 0;
+  width: 130px;
+  height: 16px;
+  background-color: #c2e297;
+  content: "FOODTRUCK";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  border-radius: 4px;
+}
+
+.grid-container__card-list-description {
+  margin-top: 10px;
+  font-family: "DM Sans", sans-serif;
+  color: #907e82;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.grid-container__border-bottom {
+  border-bottom: 1px solid #e1e1e1;
+  margin: 25px 0 25px;
+}
+
+.open-days {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #000;
+}
+
+.open-hours {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #ffa5ba;
+}
+
+.contact-info {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.btn-locations {
+  width: 161.45px;
+  height: 44px;
+  background-color: #d41342;
+  border-radius: 22px;
+  color: #fff;
+  border-style: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-franchise {
+  margin-top: 10px;
+  width: 161px;
+  height: 44px;
+  background-color: #fff;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21;
+  color: #d41443;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    width: 700px;
+    margin-left: 36px;
+    padding-bottom: 81px;
+    background-color: #fff5f6;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-container__card {
+    width: 220px;
+    margin-right: 20px;
+    margin-left: 0;
+  }
+  .contact-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14.5px;
+  }
+}
+@media (min-width: 1280px) {
+  .grid-container {
+    width: 100%;
+    padding-bottom: 86px;
+    display: flex;
+    justify-content: center;
+  }
+  .grid-container__card {
+    width: 330px;
+    margin-right: 31px;
+  }
+  .contact-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+
 .products__tag {
   color: #ffa5ba;
   font-family: "Titan One", sans-serif;
@@ -780,6 +977,7 @@ img {
     background-image: url("../images/products/home-pic3-desktop@2x.png");
   }
 }
+
 .about {
   position: relative;
 }
@@ -976,4 +1174,218 @@ img {
   width: 10px;
   height: 44px;
   fill: #d41443;
+
+.advantages {
+  min-width: 320px;
+  max-width: 1980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff5f6;
+}
+.advantages__container-bucket {
+  margin-left: 20px;
+  margin-top: 39px;
+}
+.advantages__container-apples {
+  margin-left: 20px;
+  margin-top: 39px;
+  margin-bottom: 38px;
+}
+.advantages__container-heart {
+  margin-left: 20px;
+  margin-bottom: 97px;
+}
+.advantages__icon {
+  margin-bottom: 16px;
+}
+.advantages__numbers {
+  font-family: "Titan One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.advantages__text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+  width: 230px;
+  margin-top: 13px;
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff5f6;
+    gap: 60px;
+  }
+  .advantages__container-bucket {
+    flex-grow: 1;
+    margin: 0;
+    margin-left: 36px;
+    margin-top: 66px;
+    margin-bottom: 136px;
+  }
+  .advantages__container-apples {
+    flex-grow: 1;
+    margin: 0;
+    margin-top: 66px;
+    margin-bottom: 136px;
+  }
+  .advantages__container-heart {
+    flex-grow: 1;
+    margin: 0;
+    margin-right: 76px;
+    margin-top: 66px;
+    margin-bottom: 136px;
+  }
+  .advantages__icon {
+    margin-bottom: 36px;
+  }
+  .advantages__numbers {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+  .advantages__text {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    width: 180px;
+    margin-top: 13px;
+  }
+}
+@media (min-width: 1280px) {
+  .advantages {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff5f6;
+    gap: 30px;
+  }
+  .advantages__container-bucket {
+    flex-grow: 1;
+    margin: 0;
+    margin-left: 115px;
+    margin-top: 39px;
+    margin-bottom: 139px;
+  }
+  .advantages__container-apples {
+    flex-grow: 1;
+    margin: 0;
+    margin-top: 39px;
+    margin-bottom: 139px;
+  }
+  .advantages__container-heart {
+    flex-grow: 1;
+    margin: 0;
+    margin-right: 115px;
+    margin-top: 39px;
+    margin-bottom: 139px;
+  }
+  .advantages__icon {
+    margin-bottom: 40px;
+  }
+  .advantages__numbers {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+  .advantages__text {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    width: 330px;
+    margin-top: 15px;
+  }
+}
+.gallery {
+
+  padding: 97px 0 80px 0;
+  background-image: linear-gradient(to top, #fff 55%, #FFF5F6 45%);
+}
+.gallery__img {
+  width: 100vw;
+}
+
+  background-image: linear-gradient(to top, #fff 55%, #fff5f6 45%);
+}
+.gallery__img {
+  width: 100vw;
+
+
+@media (min-width: 768px) {
+  .gallery {
+    padding: 140px 0 121px 0;
+  }
+}
+@media (min-width: 1280px) {
+  .gallery {
+    padding: 139px 0 123px 0;
+  }
+}
+.gallery {
+  padding: 97px 0 80px 0;
+  background-image: linear-gradient(to top, #fff 55%, #FFF5F6 45%);
+}
+.gallery__img {
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    padding: 140px 0 121px 0;
+  }
+}
+@media (min-width: 1280px) {
+  .gallery {
+    padding: 139px 0 123px 0;
+  }
+}
+.footer {
+  background-color: #ffb8ca;
+}
+
+.header__logo-header {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.154;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header__logo-header-span {
+  font-size: 48px;
+  color: #d41443;
+  line-height: 0.959;
+
+
+
 }/*# sourceMappingURL=main.css.map */
