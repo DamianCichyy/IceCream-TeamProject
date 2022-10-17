@@ -778,20 +778,94 @@ img {
   justify-content: center;
 }
 
+.btn-locations:hover {
+  background-color: #fff;
+  color: #d41443;
+  cursor: pointer;
+}
+
+.btn-franchise:hover {
+  background-color: #d41342;
+  color: #fff;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .grid-container {
-    width: 700px;
+    width: 100%;
     padding-bottom: 81px;
-    background-color: #fff5f6;
-    border-radius: 24px;
+    margin-left: 18px;
     display: flex;
-    align-items: center;
     justify-content: center;
   }
   .grid-container__card {
     width: 220px;
-    margin-right: 20px;
-    margin-left: 0;
+    margin: 0 20px 0 0;
+  }
+  .grid-container__card-list {
+    padding: 50px 44px 50px 31px;
+  }
+  .header-card {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+  .header-card-caffe::before {
+    margin: 50px 116px 30px 0;
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+  }
+  .header-card-foodtruck::before {
+    margin: 50px 51px 30px 0;
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+  }
+  .grid-container__card-list-description {
+    font-size: 14px;
+    line-height: 166%;
+  }
+  .grid-container__border-bottom {
+    margin: 30px 0 30px;
+  }
+  .open-days {
+    font-size: 14px;
+  }
+  .open-hours {
+    font-size: 14px;
+  }
+  .contact-info {
+    font-size: 14px;
+    line-height: 183%;
+  }
+  .btn-locations {
+    width: 191.45px;
+    height: 44px;
+    margin-right: 14.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-franchise {
+    width: 174.05px;
+    height: 44px;
+    margin: 0;
+    color: #d41443;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .contact-btns {
     display: flex;
@@ -808,12 +882,10 @@ img {
     display: flex;
     justify-content: center;
     background-color: #fff5f6;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
   .grid-container__card {
     width: 330px;
-    margin-right: 31px;
+    margin: 0 31px 0 0;
   }
   .contact-btns {
     display: flex;
@@ -821,5 +893,78 @@ img {
     align-items: center;
     justify-content: center;
     gap: 15px;
+  }
+  .grid-container__card-list {
+    padding: 51px 44px 62px 43px;
+  }
+  .header-card {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: #000;
+  }
+  .header-card-caffe::before {
+    margin: 51px 214px 32px 0;
+    width: 73px;
+    height: 28px;
+    background-color: #f0d1a5;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+  }
+  .header-card-foodtruck::before {
+    margin: 52px 149px 32px 0;
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+  }
+  .grid-container__card-list-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+  }
+  .grid-container__border-bottom {
+    margin: 32px 0 32px;
+  }
+  .open-days {
+    font-size: 16px;
+  }
+  .open-hours {
+    font-size: 16px;
+  }
+  .contact-info {
+    font-size: 16px;
+    line-height: 183%;
+  }
+  .btn-locations {
+    width: 198px;
+    height: 44px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-franchise {
+    width: 180px;
+    height: 44px;
+    margin: 0;
+    color: #d41443;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
