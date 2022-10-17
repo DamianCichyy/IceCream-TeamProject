@@ -3,6 +3,17 @@
  * Wszystkie partials podłączamy tutaj.
  */
 
+
+@import "./utils/colors";
+@import "./utils/fonts";
+@import "./utils/mixins";
+@import "./utils/resets";
+@import "./utils/global";
+@import "./components/header";
+@import "./components/mobile-menu";
+@import "./components/products";
+@import "./components/is-about";
+
 @import './utils/colors';
 @import './utils/fonts';
 @import './utils/mixins';
@@ -23,5 +34,6 @@
 // @import './components/footer';
 
 @import './components/footer';
+
 
 
