@@ -1,0 +1,319 @@
+.page-container {
+  background: linear-gradient(180deg, $white 7%, $bgcolor-contacts 7%, $bgcolor-contacts 100%);
+}
+.header-hidden {
+  display: none;
+}
+.grid-container__card {
+  width: 220px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  background-color: $white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+.grid-container__card-list {
+  padding: 25px 21px 43px 20px;
+}
+.header-card {
+  font-family: $primary-font-family;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  color: $black;
+}
+.header-card-caffe::before {
+  margin: 43px 120px 25px 0;
+  width: 80px;
+  height: 16px;
+  background-color: $beige;
+  content: 'CAFE';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-family: $primary-font-family;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  border-radius: 4px;
+}
+.header-card-foodtruck::before {
+  margin: 43px 120px 25px 0;
+  width: 130px;
+  height: 16px;
+  background-color: $green;
+  content: 'FOODTRUCK';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-family: $primary-font-family;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  border-radius: 4px;
+}
+.grid-container__card-list-description {
+  margin-top: 10px;
+  font-family: $primary-font-family;
+  color: $grey;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+.grid-container__border-bottom {
+  border-bottom: 1px solid $light-grey;
+  margin: 25px 0 25px;
+}
+.open-days {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: $black;
+}
+.open-hours {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: $dark-pink;
+}
+.contact-info {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $grey;
+}
+.btn-locations {
+  width: 161.45px;
+  height: 44px;
+  background-color: $button-red;
+  border-radius: 22px;
+  color: $white;
+  border-style: none;
+  font-family: $primary-font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-franchise {
+  margin-top: 10px;
+  width: 161px;
+  height: 44px;
+  background-color: $white;
+  font-family: $primary-font-family;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21;
+  color: $red;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn-locations:hover {
+  background-color: $white;
+  color: $red;
+  cursor: pointer;
+}
+.btn-franchise:hover {
+  background-color: $button-red;
+  color: $white;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .page-container {
+    background: linear-gradient(180deg, $white 18%, $bgcolor-contacts 18%, $bgcolor-contacts 100%);
+  }
+  .grid-container {
+    width: 100%;
+    padding-bottom: 81px;
+    display: flex;
+    justify-content: center;
+  }
+  .grid-container__card {
+    width: 220px;
+    margin: 0 20px 0 0;
+  }
+  .grid-container__card-list {
+    padding: 50px 44px 50px 31px;
+  }
+  .header-card {
+    font-family: $primary-font-family;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+  .header-card-caffe::before {
+    margin: 50px 116px 30px 0;
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+  }
+  .header-card-foodtruck::before {
+    margin: 50px 51px 30px 0;
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+  }
+  .grid-container__card-list-description {
+    font-size: 14px;
+    line-height: 166%;
+  }
+  .grid-container__border-bottom {
+    margin: 30px 0 30px;
+  }
+  .open-days {
+    font-size: 14px;
+  }
+  .open-hours {
+    font-size: 14px;
+  }
+  .contact-info {
+    font-size: 14px;
+    line-height: 183%;
+  }
+  .btn-locations {
+    width: 191.45px;
+    height: 44px;
+    margin-right: 14.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-franchise {
+    width: 174.05px;
+    height: 44px;
+    margin: 0;
+    color: $red;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14.5px;
+  }
+}
+@media (min-width: 1280px) {
+  .page-container {
+    background: linear-gradient(180deg, $white 20%, $bgcolor-contacts 20%, $bgcolor-contacts 100%);
+  }
+  .grid-container {
+    width: 100%;
+    padding-bottom: 86px;
+    display: flex;
+    justify-content: center;
+  }
+  .grid-container__card {
+    width: 330px;
+    margin: 0 31px 0 0;
+  }
+  .contact-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .grid-container__card-list {
+    padding: 51px 44px 62px 43px;
+  }
+  .header-card {
+    font-family: $primary-font-family;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: $black;
+  }
+  .header-card-caffe::before {
+    margin: 51px 214px 32px 0;
+    width: 73px;
+    height: 28px;
+    background-color: $beige;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+  }
+  .header-card-foodtruck::before {
+    margin: 52px 149px 32px 0;
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+  }
+  .grid-container__card-list-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+  }
+  .grid-container__border-bottom {
+    margin: 32px 0 32px;
+  }
+  .open-days {
+    font-size: 16px;
+  }
+  .open-hours {
+    font-size: 16px;
+  }
+  .contact-info {
+    font-size: 16px;
+    line-height: 183%;
+  }
+  .btn-locations {
+    width: 198px;
+    height: 44px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-franchise {
+    width: 180px;
+    height: 44px;
+    margin: 0;
+    color: $red;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
