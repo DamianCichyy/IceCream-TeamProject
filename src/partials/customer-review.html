@@ -1,6 +1,6 @@
 <div class="customer-review container">
   <ul class="customer-review__list">
-    <li class="customer-review__item">
+    <li class="customer-review__item active" data-id="1">
       <div class="customer-review__img-container">
         <img
           alt="First customer"
@@ -26,18 +26,9 @@
           <li></li>
         </ul>
         <p class="customer-review__person-name">Emily, Los Angeles</p>
-        <ul class="customer-review__slide-dots">
-          <li class="is-active">
-            <svg class="customer-review__icon">
-              <use href="./images/sprite.svg#icon-house"></use>
-            </svg>
-          </li>
-          <li></li>
-          <li></li>
-        </ul>
       </div>
     </li>
-    <li class="customer-review__item">
+    <li class="customer-review__item" data-id="2">
       <div class="customer-review__img-container">
         <img
           alt="Second customer"
@@ -63,18 +54,9 @@
           <li></li>
         </ul>
         <p class="customer-review__person-name">Olivia, Chicago</p>
-        <ul class="customer-review__slide-dots">
-          <li></li>
-          <li>
-            <svg class="customer-review__icon">
-              <use href="./images/sprite.svg#icon-house"></use>
-            </svg>
-          </li>
-          <li></li>
-        </ul>
       </div>
     </li>
-    <li class="customer-review__item">
+    <li class="customer-review__item" data-id="3">
       <div class="customer-review__img-container">
         <img
           alt="Third customer"
@@ -99,17 +81,26 @@
           <li></li>
           <li></li>
         </ul>
-        <p class="customer-review__name">Sarah, New York</p>
-        <ul class="customer-review__slide-dots">
-          <li></li>
-          <li></li>
-          <li>
-            <svg class="customer-review__icon">
-              <use href="./images/sprite.svg#icon-house"></use>
-            </svg>
-          </li>
-        </ul>
+        <p class="customer-review__person-name">Sarah, New York</p>
       </div>
+    </li>
+  </ul>
+
+  <ul class="customer-review__slide-dots">
+    <li class="is-active" data-id="1">
+      <svg class="customer-review__icon">
+        <use href="./images/sprite.svg#icon-house"></use>
+      </svg>
+    </li>
+    <li data-id="2">
+      <svg class="customer-review__icon">
+        <use href="./images/sprite.svg#icon-house"></use>
+      </svg>
+    </li>
+    <li data-id="3">
+      <svg class="customer-review__icon">
+        <use href="./images/sprite.svg#icon-house"></use>
+      </svg>
     </li>
   </ul>
 </div>
