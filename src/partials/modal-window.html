@@ -1,0 +1,90 @@
+<div class="modal__background is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__button-exit" data-modal-close>
+      <svg class="modal__button-exit-svg">
+        <use href="./images/sprite.svg#icon-close" width="14" height="14" x="2" y="2"></use>
+      </svg>
+    </button>
+
+    <h3 class="modal__header">Leave your personal data in the form below</h3>
+    <form class="modal__form">
+      <label for="user_name" class="modal__form-label"
+        ><p class="modal__form-label-paragraph">Name</p>
+        <input type="text" class="modal__form-label-input" required />
+        <a href="#" class="modal__form-label-svg">
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-person" width="12" height="12" x="3" y="3"></use>
+          </svg>
+        </a>
+      </label>
+
+      <label for="user_phone" class="modal__form-label"
+        ><p class="modal__form-label-paragraph">Telephone</p>
+        <input type="tel" class="modal__form-label-input" required />
+        <a href="#" class="modal__form-label-svg">
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-phone" width="13" height="13" x="2.5" y="2.5"></use>
+          </svg>
+        </a>
+      </label>
+
+      <label for="user_email" class="modal__form-label"
+        ><p class="modal__form-label-paragraph">E-mail</p>
+        <input type="email" name="email" class="modal__form-label-input" required />
+        <a href="#" class="modal__form-label-svg">
+          <svg width="18" height="18">
+            <use
+              href="./images/sprite.svg#icon-envelope-2"
+              width="15"
+              height="12"
+              x="1.5"
+              y="3"
+            ></use>
+          </svg>
+        </a>
+      </label>
+
+      <label for="comment" class="modal__form-label">
+        <p class="modal__form-label-paragraph">Comment</p>
+        <textarea
+          class="modal__form-label-textarea"
+          name="comment"
+          placeholder="Leave a comment..."
+          required
+        ></textarea>
+      </label>
+
+      <label class="modal__form-checkbox">
+        <input
+          type="checkbox"
+          name="validate"
+          value="regulamin"
+          class="modal__form-checkbox-input"
+          required
+        />
+
+        <svg class="modal__form-checkbox-svg">
+          <use href="./images/sprite.svg#icon-square"></use>
+          <g class="modal__form-checkbox-svg-vector">
+            <use
+              href="./images/sprite.svg#icon-vector-1"
+              width="11"
+              height="8"
+              x="2.5"
+              y="3.5"
+            ></use>
+          </g>
+        </svg>
+
+        <p class="modal__form-checkbox-paragraph">
+          I declare that I accept the
+          <a href="#" class="modal__form-checkbox-paragraph-links"> Regulations</a>
+          and
+          <a href="#" class="modal__form-checkbox-paragraph-links">Privacy Policy</a>.
+        </p>
+      </label>
+
+      <button type="submit" class="modal__form-button">Wyślij</button>
+    </form>
+  </div>
+</div>
