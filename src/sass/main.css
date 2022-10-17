@@ -564,6 +564,9 @@ img {
     min-width: 254px;
 
 
+
+
+
     right: 0;
     left: unset;
   }
@@ -641,6 +644,8 @@ img {
     fill: #d41443;
   }
 }
+
+
 
 .page-container {
   background-color: #fff5f6;
@@ -826,6 +831,7 @@ img {
     justify-content: center;
     gap: 15px;
   }
+
 
 .products__tag {
   color: #ffa5ba;
@@ -1121,11 +1127,28 @@ img {
   }
 }
 .gallery {
+
+  padding: 97px 0 80px 0;
+  background-image: linear-gradient(to top, #fff 55%, #FFF5F6 45%);
+}
+.gallery__img {
+  width: 100vw;
+}
+
   background-image: linear-gradient(to top, #fff 55%, #fff5f6 45%);
 }
 .gallery__img {
   width: 100vw;
 
+
+@media (min-width: 768px) {
+  .gallery {
+    padding: 140px 0 121px 0;
+  }
+}
+@media (min-width: 1280px) {
+  .gallery {
+    padding: 139px 0 123px 0;
   }
 }
 .gallery {
