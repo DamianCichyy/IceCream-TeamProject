@@ -128,7 +128,7 @@
 @media (min-width: 768px) {
   .grid-container {
     width: 700px;
-    margin-left: 36px;
+    // margin-left: 36px;
     padding-bottom: 81px;
     background-color: $bgcolor-contacts;
     border-radius: 24px;
@@ -155,7 +155,9 @@
     padding-bottom: 86px;
     display: flex;
     justify-content: center;
-    background-image: url('/src/images/contacts/contacts_bg@1x.jpg');
+    // background-image: url('/src/images/contacts/contacts_bg@1x.jpg');
+    // height: 382px;
+    background-color: $bgcolor-contacts;
     background-size: cover;
     background-repeat: no-repeat;
   }
