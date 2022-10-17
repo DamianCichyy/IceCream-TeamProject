@@ -930,29 +930,29 @@ img {
 }
 
 .button-about {
-  width: 176px;
-  color: red;
-  border: none;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 44px;
-  padding: 0 17px;
-  cursor: pointer;
-  background: white;
-  border-radius: 22px;
-  width: 176px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
-  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  border-style: none;
+  background-color: #fff;
+  border-radius: 22px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.313;
+  gap: 12px;
+  color: #d41443;
+  padding: 0 37px;
 }
 .button-about-svg {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 10px;
+  height: 44px;
   fill: #d41443;
-  width: 4.43px;
-  height: 8px;
-  display: inline-block;
 }/*# sourceMappingURL=main.css.map */
