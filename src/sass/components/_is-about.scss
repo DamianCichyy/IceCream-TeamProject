@@ -33,6 +33,18 @@ padding: 125px 20px 40px;
     margin-left: auto;
     margin-right: auto;
     max-width: 480px;
+    
+@media screen and (min-width: 768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+    max-width: 768px;
+}
+
+@media screen and (min-width: 1200px) {
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 1200px;
+}
 }
 .about__label {
     display: block;
@@ -43,10 +55,11 @@ padding: 125px 20px 40px;
     color: dark-pink;
     text-transform: uppercase;
     margin-bottom: 15px;
+    color: $pink;
 }
 .about__title {
     font-family: Titan One,cursive;
-    color: red;
+    color: $red;
     font-size: 34px;
     line-height: 1.18;
     text-align: center;
@@ -78,7 +91,7 @@ padding: 125px 20px 40px;
     margin-top: 0;
     }
     @media screen and (min-width: 1200px) {
-      
+        width: 463px;
     }
 }
 .about__text--modifier {

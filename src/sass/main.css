@@ -823,6 +823,20 @@ img {
   margin-right: auto;
   max-width: 480px;
 }
+@media screen and (min-width: 768px) {
+  .container-about {
+    padding-left: 34px;
+    padding-right: 34px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-about {
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 1200px;
+  }
+}
 
 .about__label {
   display: block;
@@ -833,11 +847,12 @@ img {
   color: dark-pink;
   text-transform: uppercase;
   margin-bottom: 15px;
+  color: #ffb8ca;
 }
 
 .about__title {
   font-family: Titan One, cursive;
-  color: red;
+  color: #d41443;
   font-size: 34px;
   line-height: 1.18;
   text-align: center;
@@ -876,6 +891,12 @@ img {
     margin-top: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .about__text {
+    width: 463px;
+  }
+}
+
 .about__text--modifier {
   font-family: DM Sans, sans-serif;
   font-weight: 500;
