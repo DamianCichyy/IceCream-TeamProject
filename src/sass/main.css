@@ -558,7 +558,6 @@ img {
 @media (min-width: 768px) {
   .mobile {
     min-width: 254px;
-    min-height: 1020px;
     right: 0;
     left: unset;
   }
@@ -934,4 +933,44 @@ img {
 }
 .gallery__img {
   width: 100vw;
+
+  }
+}
+.gallery {
+  padding: 97px 0 80px 0;
+  background-image: linear-gradient(to top, #fff 55%, #FFF5F6 45%);
+}
+.gallery__img {
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    padding: 140px 0 121px 0;
+  }
+}
+@media (min-width: 1280px) {
+  .gallery {
+    padding: 139px 0 123px 0;
+  }
+}
+.footer {
+  background-color: #ffb8ca;
+}
+
+.header__logo-header {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.154;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header__logo-header-span {
+  font-size: 48px;
+  color: #d41443;
+  line-height: 0.959;
+
 }/*# sourceMappingURL=main.css.map */
