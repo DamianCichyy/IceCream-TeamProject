@@ -65,6 +65,16 @@ padding: 125px 20px 40px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 26px;
+
+@media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px){
+    font-size: 58px;
+    margin-bottom: 50px;
+}
 }
 .about__content {
     @media screen and (max-width: 767px) {
@@ -92,6 +102,7 @@ padding: 125px 20px 40px;
     }
     @media screen and (min-width: 1200px) {
         width: 463px;
+        
     }
 }
 .about__text--modifier {
@@ -102,6 +113,7 @@ padding: 125px 20px 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 47px;
+    
     @media screen and (max-width: 767px){
         max: width 220px;
     }
@@ -111,11 +123,14 @@ padding: 125px 20px 40px;
         margin: 0 0 50px;  
     max-width: 340px;
     font-size: 14px;
+    line-height: 1.7;
 
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
         max-width: 100%;
+        line-height: 1.75;
+        margin: 0 0 35px;
 } 
 }
 .about__second-text {
@@ -123,18 +138,21 @@ padding: 125px 20px 40px;
     font-family: DM Sans,sans-serif;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.58;
+    line-height: 1.5;
     margin-left: auto;
     margin-right: auto;
-    color:gray;
+    color:#907E82;
     @media screen and (min-width: 768px){
     display: block;
     margin: 0 0 62px;
     max-width: 340px;
     font-size: 14px;
+    line-height: 1.7;
 }
 @media screen and (min-width: 1200px){
     max-width: 100%;
+    font-size: 14px;
+    line-height: 1.9;
 }
 }
 .button-about {
@@ -156,6 +174,9 @@ transition-property: background-color, color;
     gap: 12px;
     color: #d41443;
     padding: 0 37px;
+    &:hover{
+        background-color:#ECEBEB;
+    }
 &-svg {
     transition-property: fill;
     transition-duration: 250ms;
