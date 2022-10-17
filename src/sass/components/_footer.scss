@@ -30,7 +30,25 @@
 .under-footer {
   display: flex;
   height: 89px;
+  padding-left: 79px;
+  padding-right: 91px;
   border-top: 1px solid $light-grey;
-  font-size: 14px;
+  font-family: $primary-font-family;
+  font-weight: map-get($font-weight, bold);
+  font-size: map-get($font-size, secondary);
+  line-height: 152%;
   justify-content: center;
-}
+  align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    .under-footer {
+      height: 73px;
+      padding: 0;
+    } 
+  }
+  @media screen and (min-width: 1200px) {
+    .under-footer {
+      height: 45px;
+      padding: 0;
+    }
+  }
