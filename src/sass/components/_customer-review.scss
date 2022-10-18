@@ -25,16 +25,6 @@
     position: relative;
   }
 
-  &__quote-icon {
-    width: 54px;
-    height: 40px;
-    fill: #e1e1e1;
-    position: absolute;
-    top: 30px;
-    left: 75px;
-    z-index: 1;
-  }
-
   &__text {
     @include flex-column;
     background: repeating-linear-gradient(
@@ -48,6 +38,17 @@
     z-index: 2;
     font-size: map-get($font-size-mobile, smalleer);
     line-height: 31px;
+
+    &:before {
+      background-image: url(../images/customer-reviews/quote.png);
+      content: '';
+      z-index: -1;
+      width: 54px;
+      height: 40px;
+      position: absolute;
+      top: -10px;
+      left: 15px;
+    }
   }
 
   &__person {
