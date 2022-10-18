@@ -950,25 +950,32 @@ img {
   background-color: #fff5f6;
 }
 
-.header__logo-header {
+.header__logo-header-footer {
   font-family: "Titan One", sans-serif;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 18px;
   line-height: 1.154;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffa5ba;
+  margin-top: 113px;
+  max-width: 232px;
 }
 
-.header__logo-header-span {
-  font-size: 48px;
+.header__logo-header-span-footer {
+  margin-top: 17px;
+  font-size: 34px;
   color: #d41443;
   line-height: 0.959;
+  max-width: 200px;
 }
 
 .footer__social-media-icons {
+  margin-top: 43px;
   display: flex;
-  gap: 40.16px;
+  justify-content: end;
+  gap: 28.24px;
+  padding-bottom: 46px;
 }
 
 .footer__social-media-icon {
@@ -978,4 +985,152 @@ img {
   height: 32px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.footer__social-media-icon:hover {
+  fill: #fff;
+  background-color: #d41443;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.under-footer {
+  border-top: 1px solid #e1e1e1;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 152%;
+  text-align: center;
+  color: #907e82;
+  padding: 22px 91px 25px 79px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 43px;
+}
+
+.contact-info {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  padding-right: 3px;
+}
+
+.contact-info__tel {
+  color: #d41443;
+}
+
+.header__logo-header-footer {
+  font-size: 26px;
+  margin-top: 165px;
+  max-width: 340px;
+}
+
+.header__logo-header-span-footer {
+  margin-top: 17px;
+  font-size: 34px;
+  line-height: 0.959;
+  max-width: 340px;
+}
+
+.footer__social-media-icons {
+  margin-top: 43px;
+  gap: 28.24px;
+  padding-bottom: 46px;
+}
+
+.footer__social-media-icon {
+  fill: #fff;
+  background-color: #fea5bb;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer__social-media-icon:hover {
+  fill: #fff;
+  background-color: #d41443;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.under-footer {
+  border-top: 1px solid #e1e1e1;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 152%;
+  text-align: center;
+  color: #907e82;
+  padding: 22px 91px 25px 79px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 43px;
+}
+
+.contact-info {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 186%;
+  padding-right: 3px;
+}
+
+@media (min-width: 1280px) {
+  .header__logo-header-footer {
+    font-size: 30px;
+    margin-top: 165px;
+    max-width: 472px;
+  }
+  .header__logo-header-span-footer {
+    margin-top: 15px;
+    font-size: 58px;
+    line-height: 1.14;
+    max-width: 474px;
+  }
+  .footer__social-media-icons {
+    margin-top: 43px;
+    gap: 28.24px;
+    padding-bottom: 46px;
+  }
+  .footer__social-media-icon {
+    fill: #fff;
+    background-color: #fea5bb;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .footer__social-media-icon:hover {
+    fill: #fff;
+    background-color: #d41443;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .under-footer {
+    border-top: 1px solid #e1e1e1;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 186%;
+    text-align: center;
+    color: #907e82;
+    padding: 9px 502px 10px 502px;
+  }
+  .contact-info {
+    font-size: 16px;
+    line-height: 186%;
+    padding-right: 3px;
+    letter-spacing: 0.02em;
+  }
 }/*# sourceMappingURL=main.css.map */
