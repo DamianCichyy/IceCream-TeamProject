@@ -4,24 +4,35 @@
 .header__logo-header {
   font-family: 'Titan One', sans-serif;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 18px;
   line-height: 1.154;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fff;
+  color: $dark-pink;
 }
 .header__logo-header-span {
-  font-size: 48px;
+  margin-top: 17px;
+  font-size: 34px;
   color: #d41443;
   line-height: 0.959;
 }
 .footer__social-media-icons {
+  margin-top: 43px;
   display: flex;
-  gap: 40.16px;
+  justify-content: end;
+  gap: 28.24px;
 }
 .footer__social-media-icon {
   fill: $white;
   background-color: $footer__social-media-icons-bg;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.footer__social-media-icon:hover {
+  fill: $white;
+  background-color: $red;
   width: 32px;
   height: 32px;
   border-radius: 50%;
