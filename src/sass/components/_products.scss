@@ -159,18 +159,11 @@
   &:focus svg {
     fill: $white;
   }
-
-  &-svg {
-    @include transition-fill;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    fill: $red;
-  }
 }
 .products-button__icon {
-  position: absolute;
-  bottom: -65px;
+  width: 40px;
+  height: 40px;
+  @include transition-fill;
 }
 
 @media screen and (min-width: 768px) {
