@@ -196,18 +196,21 @@
 
   .products__list {
     flex-direction: row;
+    display: flex;
     gap: 20px;
     justify-content: center;
     padding-left: 34px;
     padding-right: 34px;
     margin-bottom: 112px;
+    gap: 20px;
   }
 
   .products__item {
     margin-bottom: 0;
     margin-top: 102px;
-    width: 220px;
-    height: 485px;
+    flex-basis: calc((100% - 20px) / 3);
+    max-width: 220px;
+    max-height: 485px;
   }
 
   .products__item--ice-cream::before {
@@ -280,8 +283,9 @@
 
   .products__item {
     margin-top: 210px;
-    width: 329px;
-    height: 525px;
+    max-width: 329px;
+    max-height: 525px;
+    flex-basis: calc((100% - 24px) / 3);
   }
 
   .products__item--ice-cream::before {
