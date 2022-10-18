@@ -9,18 +9,22 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $dark-pink;
+  margin-top: 113px;
+  max-width: 232px;
 }
 .header__logo-header-span {
   margin-top: 17px;
   font-size: 34px;
   color: #d41443;
   line-height: 0.959;
+  max-width: 200px;
 }
 .footer__social-media-icons {
   margin-top: 43px;
   display: flex;
   justify-content: end;
   gap: 28.24px;
+  padding-bottom: 46px;
 }
 .footer__social-media-icon {
   fill: $white;
@@ -39,9 +43,27 @@
   cursor: pointer;
 }
 .under-footer {
-  display: flex;
-  height: 89px;
-  border-top: 1px solid $grey;
+  // max-width: 150px;
+  border-top: 1px solid $light-grey;
   font-size: 14px;
-  justify-content: center;
+  font-weight: 700;
+  line-height: 152%;
+  text-align: center;
+  color: $grey;
+  padding: 22px 91px 25px 79px;
+}
+.contacts {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 43px;
+}
+.contact-info {
+  font-family: $primary-font-family;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  padding-right: 3px;
+}
+.contact-info__tel {
+  color: $red;
 }
