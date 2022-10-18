@@ -45,11 +45,11 @@
       </label>
 
       <label for="comment" class="modal__form-label">
-        <p class="modal__form-label-paragraph">Comment</p>
+        <p class="modal__form-label-paragraph">Order</p>
         <textarea
           class="modal__form-label-textarea"
           name="comment"
-          placeholder="Leave a comment..."
+          placeholder="Please enter your order..."
           required
         ></textarea>
       </label>
@@ -84,7 +84,12 @@
         </p>
       </label>
 
-      <button type="submit" class="modal__form-button">Send</button>
+      <button type="submit" class="modal__form-button">
+        Order now
+        <svg class="modal__form-button-svg">
+          <use href="./images/sprite.svg#icon-arrow"></use>
+        </svg>
+      </button>
     </form>
   </div>
 </div>
