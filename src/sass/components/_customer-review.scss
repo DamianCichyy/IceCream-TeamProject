@@ -23,6 +23,17 @@
     background-color: #fafafa;
     text-align: center;
     position: relative;
+
+    &::after {
+      background-image: url(../images/customer-reviews/reviews_dots.png);
+      content: '';
+      width: 32px;
+      height: 4px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -25px;
+    }
   }
 
   &__text {
@@ -53,19 +64,6 @@
 
   &__person {
     @include flex-column;
-  }
-
-  &__dots {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    li {
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background-color: #c7113e;
-    }
   }
 
   &__person-name {
