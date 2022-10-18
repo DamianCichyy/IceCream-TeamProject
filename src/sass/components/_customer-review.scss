@@ -12,10 +12,10 @@
     @include flex-column;
     gap: 30px;
     align-items: center;
-  }
-
-  &__item:not(:first-of-type) {
     display: none;
+    &.active {
+      display: flex;
+    }
   }
 
   &__text-container {
@@ -23,16 +23,17 @@
     background-color: #fafafa;
     text-align: center;
     position: relative;
-  }
 
-  &__quote-icon {
-    width: 54px;
-    height: 40px;
-    fill: #e1e1e1;
-    position: absolute;
-    top: 30px;
-    left: 75px;
-    z-index: 1;
+    &::after {
+      background-image: url(../images/customer-reviews/reviews_dots.png);
+      content: '';
+      width: 32px;
+      height: 4px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -25px;
+    }
   }
 
   &__text {
@@ -48,23 +49,21 @@
     z-index: 2;
     font-size: map-get($font-size-mobile, smalleer);
     line-height: 31px;
+
+    &:before {
+      background-image: url(../images/customer-reviews/quote.png);
+      content: '';
+      z-index: -1;
+      width: 54px;
+      height: 40px;
+      position: absolute;
+      top: -10px;
+      left: 15px;
+    }
   }
 
   &__person {
     @include flex-column;
-  }
-
-  &__dots {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    li {
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background-color: #c7113e;
-    }
   }
 
   &__person-name {
@@ -84,6 +83,15 @@
       border-radius: 50%;
       background-color: #d9d9d9;
       cursor: pointer;
+      svg {
+        display: none;
+      }
+
+      &.is-active {
+        svg {
+          display: block;
+        }
+      }
     }
   }
 
