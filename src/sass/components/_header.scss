@@ -80,6 +80,7 @@
     padding-top: 137px;
 
     &-header {
+      @include flex-column;
       font-family: $secondary-font-family;
       font-weight: map-get($font-weight, primary);
       font-size: map-get($font-size-mobile, big);
@@ -87,11 +88,13 @@
       letter-spacing: map-get($letter-spacing, medium);
       text-transform: uppercase;
       color: $white;
+      max-width: 217px;
 
       &-span {
         font-size: map-get($font-size-mobile, huge);
         color: $red;
         line-height: 0.959;
+        margin: 0;
       }
     }
 
@@ -250,6 +253,7 @@
         font-size: map-get($font-size-tablet, small);
         line-height: 1.136;
         padding-top: 6px;
+        max-width: 162px;
 
         &-span {
           font-size: map-get($font-size-tablet, bigger);
@@ -412,6 +416,7 @@
         font-size: map-get($font-size-desktop, medium);
         line-height: 1.158;
         padding-top: 11px;
+        max-width: 277px;
 
         &-span {
           font-size: map-get($font-size-desktop, biggest);

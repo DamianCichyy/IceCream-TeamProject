@@ -1,0 +1,254 @@
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  .modal {
+    transform: scale(0.7);
+  }
+}
+
+.modal {
+  @include transition-transform;
+  position: absolute;
+  width: calc(100vw - 30px);
+  min-height: 581px;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  background-color: $red;
+  border-radius: 22px;
+  padding: 40px 40px;
+  z-index: 999;
+  color: $white;
+  font-family: $primary-font-family;
+
+  &__is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  &__background {
+    @include transition-visibility-opacity;
+    width: 100%;
+    height: 100%;
+    background-color: $modal-background-color;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 999;
+  }
+
+  &__button-exit {
+    @include flex;
+    cursor: pointer;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 16px;
+    right: 16px;
+    background-color: $transparent;
+    border-style: none;
+
+    &-svg {
+      @include transition-fill;
+      width: 18px;
+      height: 18px;
+      fill: $white;
+    }
+  }
+
+  &__header {
+    font-weight: map-get($font-weight, bold);
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+
+  &__form {
+    @include flex-column;
+    gap: 10px;
+
+    &-label {
+      @include flex-column;
+      gap: 4px;
+      position: relative;
+
+      &:hover &-input,
+      &:focus-within &-input {
+        border: 3px solid $pink;
+      }
+
+      &:hover &-svg,
+      &:focus-within &-svg {
+        fill: $red;
+      }
+
+      &-paragraph {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+      }
+
+      &-input {
+        @include transition-border;
+        border: 1px solid $pink;
+        border-radius: 22px;
+        width: 100%;
+        height: 40px;
+        padding: 0 32px;
+        color: $black;
+      }
+
+      &-svg {
+        @include transition-fill;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 29px;
+        left: 12px;
+        pointer-events: none;
+        fill: $pink;
+      }
+
+      &-textarea {
+        @include transition-border;
+        resize: none;
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+        border-radius: 22px;
+        color: $black;
+        border: 1px solid $pink;
+
+        &:hover,
+        &:focus {
+          border: 3px solid $pink;
+        }
+      }
+    }
+
+    &-checkbox {
+      @include flex-row;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      padding: 10px 0 20px 0;
+
+      &-input:checked ~ &-svg {
+        background-color: $pink;
+        fill: $pink;
+      }
+
+      &-input {
+        cursor: pointer;
+        opacity: 0;
+        width: 16px;
+        height: 15px;
+        pointer-events: visible;
+      }
+
+      &-svg {
+        @include transition-background-color-fill;
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 15px;
+        border-radius: 2px;
+        fill: $pink;
+
+        &:hover,
+        &:focus {
+          fill: $pink;
+        }
+
+        &-vector {
+          fill: $red;
+        }
+      }
+
+      &-paragraph {
+        font-size: 12px;
+        line-height: 1.17;
+
+        &-links {
+          @include transition-color;
+          text-decoration: underline;
+          color: $pink;
+
+          &:hover,
+          &:focus {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &-button {
+      @include transition-background-color-color;
+      @include flex;
+      cursor: pointer;
+      justify-content: center;
+      border-style: none;
+      background-color: $white;
+      border-radius: 22px;
+      font-family: $primary-font-family;
+      font-weight: map-get($font-weight, bold);
+      font-size: map-get($font-size, primary);
+      line-height: 1.313;
+      gap: 12px;
+      color: $red;
+      padding: 0 37px;
+      margin: 0 auto;
+
+      &:hover,
+      &:focus {
+        background-color: $pink;
+        color: $white;
+      }
+
+      &:hover svg,
+      &:focus svg {
+        fill: $white;
+      }
+
+      &-svg {
+        @include transition-fill;
+        width: 10px;
+        height: 44px;
+        fill: $red;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+
+    &__header {
+      line-height: 1.15;
+    }
+
+    &__form {
+      &-checkbox {
+        padding-left: 15px;
+        &-paragraph {
+          line-height: 1.72;
+          font-size: map-get($font-size, secondary);
+        }
+      }
+    }
+  }
+}
