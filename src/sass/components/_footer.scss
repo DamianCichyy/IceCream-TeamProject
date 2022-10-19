@@ -39,6 +39,7 @@
         padding: 43px 0 46px 0;
 
         &-svg {
+          cursor: pointer;
           @include transition-background-color;
           width: 32px;
           height: 32px;
