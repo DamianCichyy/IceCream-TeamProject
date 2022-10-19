@@ -1,10 +1,7 @@
 .footer {
   background-color: $section-pink;
 }
-.header {
-  display: flex;
-}
-.header__logo-header {
+.header__logo-header-footer {
   font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -15,7 +12,7 @@
   margin-top: 113px;
   max-width: 232px;
 }
-.header__logo-header-span {
+.header__logo-header-span-footer {
   margin-top: 17px;
   font-size: 34px;
   color: #d41443;
@@ -72,15 +69,12 @@
 }
 @media (min-width: 768px) {
 }
-.header {
-  background-color: $section-pink;
-}
-.header__logo-header {
+.header__logo-header-footer {
   font-size: 26px;
   margin-top: 165px;
   max-width: 340px;
 }
-.header__logo-header-span {
+.header__logo-header-span-footer {
   margin-top: 17px;
   font-size: 34px;
   line-height: 0.959;
@@ -130,12 +124,12 @@
   padding-right: 3px;
 }
 @media (min-width: 1280px) {
-  .header__logo-header {
+  .header__logo-header-footer {
     font-size: 30px;
     margin-top: 165px;
     max-width: 472px;
   }
-  .header__logo-header-span {
+  .header__logo-header-span-footer {
     margin-top: 15px;
     font-size: 58px;
     line-height: 1.14;
