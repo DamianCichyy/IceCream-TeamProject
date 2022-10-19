@@ -105,7 +105,6 @@
 @media (min-width: 768px) {
   .mobile {
     min-width: 254px;
-    min-height: 1020px;
     right: 0;
     left: unset;
 
@@ -134,7 +133,6 @@
 
         &-header {
           font-family: $secondary-font-family;
-
           font-weight: map-get($font-weight, primary);
           font-size: 20px;
           line-height: 1.15;

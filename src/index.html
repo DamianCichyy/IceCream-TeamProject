@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
+    <title>Ice Cream</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -21,12 +21,29 @@
     <div class="container">
       <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
       <include src="./partials/header.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/is-about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer-review.html"></include>
       <include src="./partials/contacts.html"></include>
+      <include src="./partials/footer.html"></include>
     </div>
-    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <include src="./partials/mobile-menu.html"></include>
 
+    <include src="./js/scroll.js"></include>
+
+    <include src="./partials/mobile-menu.html"></include>
+    <include src="./partials/modal.html"></include>
+
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/reviews.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

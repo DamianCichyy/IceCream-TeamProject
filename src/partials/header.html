@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
   <img
     class="header__white"
     alt="White Circle"
@@ -51,15 +51,15 @@
 
     <nav>
       <ul class="header__menu-nav">
-        <li><a href="#" class="header__menu-nav-link">Home</a></li>
-        <li><a href="#" class="header__menu-nav-link">About Us</a></li>
+        <li><a href="index.html" class="header__menu-nav-link">Home</a></li>
+        <li><a href="#about" class="header__menu-nav-link">About Us</a></li>
         <li>
-          <a href="#" class="header__menu-nav-link">How it's made?</a>
+          <a href="#made" class="header__menu-nav-link">How it's made?</a>
         </li>
         <li>
-          <a href="#" class="header__menu-nav-link">Our products</a>
+          <a href="#products" class="header__menu-nav-link">Our products</a>
         </li>
-        <li><a href="#" class="header__menu-nav-link">Contact</a></li>
+        <li><a href="#contacts" class="header__menu-nav-link">Contact</a></li>
       </ul>
     </nav>
 
@@ -73,7 +73,7 @@
       </svg>
     </button>
 
-    <button class="header__menu-button" type="button">
+    <button class="header__menu-button" type="button" data-modal-open>
       Buy now
       <svg class="header__menu-button-svg">
         <use href="./images/sprite.svg#icon-arrow"></use>
@@ -82,15 +82,17 @@
   </div>
   <div class="header__logo">
     <h1 class="header__logo-header">
-      Ice cream <br />made with<br /><span class="header__logo-header-span">Passion</span>
+      Ice cream made with<span class="header__logo-header-span">Passion</span>
     </h1>
     <ul class="header__logo-list">
       <li>
-        <h3 class="header__logo-list-header">16</h3>
+        <h3 class="header__logo-list-header"><span class="header__number-of-cafes">16</span></h3>
         <p class="header__logo-list-paragraph">cafes</p>
       </li>
       <li>
-        <h3 class="header__logo-list-header">23</h3>
+        <h3 class="header__logo-list-header">
+          <span class="header__number-of-food-trucks">23</span>
+        </h3>
         <p class="header__logo-list-paragraph">food trucks</p>
       </li>
     </ul>

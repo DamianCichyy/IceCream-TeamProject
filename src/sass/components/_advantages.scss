@@ -1,0 +1,218 @@
+.advantages {
+  min-width: 320px;
+  max-width: 1980px;
+  margin: 0 auto;
+  background-color: $section-pink;
+  &__hidden-header {
+    display: none;
+  }
+  &__container {
+    @include flex-column;
+  }
+  &__container-bucket {
+    margin-left: 3%;
+    margin-top: 39px;
+  }
+  &__container-apples {
+    margin-left: 3%;
+    margin-top: 39px;
+    margin-bottom: 38px;
+  }
+  &__container-heart {
+    margin-left: 3%;
+    margin-bottom: 97px;
+  }
+  &__container-bucket::before {
+    content: '';
+    display: block;
+    background: url('/images/advantages/bucket.png');
+    height: 50px;
+    width: 33px;
+    margin-bottom: 10px;
+  }
+  &__container-apples::before {
+    content: '';
+    display: block;
+    background: url('/images/advantages/apples.png');
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  &__container-heart::before {
+    content: '';
+    display: block;
+    background: url('/images/advantages/heart.png');
+    height: 50px;
+    width: 44px;
+    margin-bottom: 10px;
+  }
+  &__numbers {
+    font-family: $secondary-font-family;
+    font-style: normal;
+    font-weight: map-get($font-weight, primary);
+    font-size: map-get($font-size-mobile, biggest);
+    line-height: 41px;
+    letter-spacing: map-get($letter-spacing, primary);
+    text-transform: uppercase;
+    color: $red;
+  }
+  &__text {
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: map-get($font-weight, bold);
+    font-size: map-get($font-size-mobile, smalleer);
+    line-height: 20px;
+    color: $black;
+    width: 230px;
+    margin-top: 13px;
+  }
+}
+@media (min-width: 768px) {
+  .advantages {
+    width: 100%;
+    background-color: $section-pink;
+    &__container {
+      @include flex-row;
+      gap: 60px;
+    }
+    &__container-bucket {
+      flex-grow: 1;
+      margin: 0;
+      margin-left: 5%;
+      margin-top: 66px;
+      margin-bottom: 136px;
+    }
+    &__container-apples {
+      flex-grow: 1;
+      margin: 0;
+      margin-top: 66px;
+      margin-bottom: 136px;
+    }
+    &__container-heart {
+      flex-grow: 1;
+      margin: 0;
+      margin-right: 10%;
+      margin-top: 66px;
+      margin-bottom: 136px;
+    }
+    &__container-bucket::before {
+      content: '';
+      display: block;
+      background: url('/images/advantages/bucket.png');
+      height: 50px;
+      width: 33px;
+      margin-bottom: 30px;
+    }
+    &__container-apples::before {
+      content: '';
+      display: block;
+      background: url('/images/advantages/apples.png');
+      height: 50px;
+      width: 50px;
+      margin-bottom: 30px;
+    }
+    &__container-heart::before {
+      content: '';
+      display: block;
+      background: url('/images/advantages/heart.png');
+      height: 50px;
+      width: 44px;
+      margin-bottom: 30px;
+    }
+    &__numbers {
+      font-family: $secondary-font-family;
+      font-style: normal;
+      font-weight: map-get($font-weight, primary);
+      font-size: map-get($font-size-tablet, biggest);
+      line-height: 55px;
+      letter-spacing: map-get($letter-spacing, primary);
+      text-transform: uppercase;
+      color: $red;
+    }
+    &__text {
+      font-family: $primary-font-family;
+      font-style: normal;
+      font-weight: map-get($font-weight, bold);
+      font-size: map-get($font-size, secondary);
+      line-height: 20px;
+      color: $black;
+      width: 180px;
+      margin-top: 13px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .advantages {
+    width: 100%;
+    background-color: $section-pink;
+    &__container {
+      @include flex-row;
+      gap: 30px;
+    }
+    &__container-bucket {
+      flex-grow: 1;
+      margin: 0;
+      margin-left: 9%;
+      margin-top: 39px;
+      margin-bottom: 139px;
+    }
+    &__container-apples {
+      flex-grow: 1;
+      margin: 0;
+      margin-top: 39px;
+      margin-bottom: 139px;
+    }
+    &__container-heart {
+      flex-grow: 1;
+      margin: 0;
+      margin-right: 9%;
+      margin-top: 39px;
+      margin-bottom: 139px;
+    }
+    &__container-bucket::before {
+      content: '';
+      display: block;
+      background: url('/images/advantages/bucket.png');
+      height: 50px;
+      width: 33px;
+      margin-bottom: 34px;
+    }
+    &__container-apples::before {
+      content: '';
+      display: block;
+      background: url('/images/advantages/apples.png');
+      height: 50px;
+      width: 50px;
+      margin-bottom: 34px;
+    }
+    &__container-heart::before {
+      content: '';
+      display: block;
+      background: url('/images/advantages/heart.png');
+      height: 50px;
+      width: 44px;
+      margin-bottom: 34px;
+    }
+    &__numbers {
+      font-family: $secondary-font-family;
+      font-style: normal;
+      font-weight: map-get($font-weight, primary);
+      font-size: map-get($font-size-desktop, biggest);
+      line-height: 66px;
+      letter-spacing: map-get($letter-spacing, primary);
+      text-transform: uppercase;
+      color: $red;
+    }
+    &__text {
+      font-family: $primary-font-family;
+      font-style: normal;
+      font-weight: map-get($font-weight, bold);
+      font-size: map-get($font-size, primary);
+      line-height: 28px;
+      color: $black;
+      width: 330px;
+      margin-top: 15px;
+    }
+  }
+}

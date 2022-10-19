@@ -1,0 +1,140 @@
+.customer-review {
+  padding: 80px 20px;
+  max-width: 100%;
+  font-family: $primary-font-family;
+  font-weight: map-get($font-weight, medium);
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    @include flex-column;
+    gap: 30px;
+    align-items: center;
+    display: none;
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__text-container {
+    padding: 40px 62px 25px 62px;
+    background-color: #fafafa;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      background-image: url(../images/customer-reviews/reviews_dots.png);
+      content: '';
+      width: 32px;
+      height: 4px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -25px;
+    }
+  }
+
+  &__text {
+    @include flex-column;
+    background: repeating-linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0) 29px,
+      #e1e1e1 29px,
+      #e1e1e1 30px
+    );
+    position: relative;
+    z-index: 2;
+    font-size: map-get($font-size-mobile, smalleer);
+    line-height: 31px;
+
+    &:before {
+      background-image: url(../images/customer-reviews/quote.png);
+      content: '';
+      z-index: -1;
+      width: 54px;
+      height: 40px;
+      position: absolute;
+      top: -10px;
+      left: 15px;
+    }
+  }
+
+  &__person {
+    @include flex-column;
+  }
+
+  &__person-name {
+    font-size: map-get($font-size, secondary);
+    padding-top: 18px;
+  }
+
+  &__slide-dots {
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    li {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #d9d9d9;
+      cursor: pointer;
+      svg {
+        display: none;
+      }
+
+      &.is-active {
+        svg {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    fill: #d31342;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer-review {
+    padding: 120px 74px;
+
+    &__text-container {
+      padding: 45px 80px 34px 80px;
+    }
+
+    &__text {
+      font-size: map-get($font-size, secondary);
+    }
+
+    &__person-name {
+      font-size: map-get($font-size, primary);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .customer-review {
+    padding: 120px 176px;
+
+    &__text-container {
+      padding: 45px 88px 35px 88px;
+    }
+
+    &__text {
+      font-size: map-get($font-size, primary);
+    }
+
+    &__person-name {
+      font-size: map-get($font-size-desktop, smallest);
+    }
+  }
+}
