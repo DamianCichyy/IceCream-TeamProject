@@ -103,14 +103,17 @@
     }
   }
 
-  &__buttons {
+  &__links {
     @include flex-row;
     gap: 8px;
     padding: 19px 0 160px 0;
 
-    &-button {
+    &-link {
       @include transition-background-color-color;
+      @include flex;
       cursor: pointer;
+      font-family: $primary-font-family;
+      justify-content: center;
       font-weight: map-get($font-weight, primary);
       font-size: map-get($font-size-mobile, smallest);
       line-height: 1.25;
@@ -120,6 +123,7 @@
       color: $red;
       border-radius: 20px;
       border-style: none;
+      background-color: $white;
 
       &:hover,
       &:focus {
@@ -285,7 +289,7 @@
       }
     }
 
-    &__buttons {
+    &__links {
       padding: 8px 0 0 0;
     }
 
@@ -440,11 +444,11 @@
       }
     }
 
-    &__buttons {
+    &__links {
       padding-top: 9px;
       gap: 15px;
 
-      &-button {
+      &-link {
         font-size: map-get($font-size, secondary);
         line-height: 1.283;
         height: 40px;
