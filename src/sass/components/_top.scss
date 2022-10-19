@@ -1,0 +1,39 @@
+.up {
+  @include transition-background-color-color;
+  @include flex;
+  cursor: pointer;
+  position: fixed;
+  z-index: 999;
+  right: 8px;
+  bottom: 8px;
+  justify-content: center;
+  border-style: none;
+  background-color: $white;
+  border-radius: 22px;
+  font-family: $primary-font-family;
+  font-weight: map-get($font-weight, bold);
+  font-size: map-get($font-size, primary);
+  line-height: 1.313;
+  gap: 12px;
+  color: $red;
+  padding: 0 37px;
+  border: 2px solid $red;
+
+  &:hover,
+  &:focus {
+    background-color: $red;
+    color: $white;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $white;
+  }
+
+  &__svg {
+    @include transition-fill;
+    width: 10px;
+    height: 44px;
+    fill: $red;
+  }
+}

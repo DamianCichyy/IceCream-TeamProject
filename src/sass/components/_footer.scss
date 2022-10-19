@@ -1,66 +1,180 @@
 .footer {
-  background-color: $section-pink;
-}
-.header__logo-header {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.154;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $dark-pink;
-}
-.header__logo-header-span {
-  margin-top: 17px;
-  font-size: 34px;
-  color: #d41443;
-  line-height: 0.959;
-}
-.footer__social-media-icons {
-  margin-top: 43px;
-  display: flex;
-  justify-content: end;
-  gap: 28.24px;
-}
-.footer__social-media-icon {
-  fill: $white;
-  background-color: $footer__social-media-icons-bg;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.footer__social-media-icon:hover {
-  fill: $white;
-  background-color: $red;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.under-footer {
-  display: flex;
-  height: 89px;
-  padding-left: 79px;
-  padding-right: 91px;
-  border-top: 1px solid $light-grey;
-  font-family: $primary-font-family;
-  font-weight: map-get($font-weight, bold);
-  font-size: map-get($font-size, secondary);
-  line-height: 152%;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  }
-  @media screen and (min-width: 768px) {
-    .under-footer {
-      height: 73px;
-      padding: 0;
-    } 
-  }
-  @media screen and (min-width: 1200px) {
-    .under-footer {
-      height: 45px;
-      padding: 0;
+  background-color: $light-pink;
+
+  &__container {
+    padding: 113px 20px 0px 20px;
+    @include flex-column;
+
+    &-headers {
+      @include flex-column;
+      gap: 17px;
+      font-family: 'Titan One';
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      &-header {
+        font-size: 18px;
+        line-height: 1.167;
+        max-width: 232px;
+        color: #ffa5ba;
+      }
+
+      &-span {
+        font-size: 34px;
+        line-height: 1.147;
+        letter-spacing: 0.04em;
+        max-width: 200px;
+        color: #d41443;
+      }
+    }
+
+    &-contact {
+      @include flex-column;
+
+      &-list {
+        @include flex-row;
+        gap: 28px;
+        margin-left: auto;
+        padding: 43px 0 46px 0;
+
+        &-svg {
+          @include transition-background-color;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background-color: #fea5bb;
+          fill: white;
+
+          &:hover,
+          &:focus {
+            background-color: $red;
+          }
+        }
+      }
+
+      &-link {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.834;
+        text-align: right;
+        color: $red;
+        padding-bottom: 43px;
+
+        &-color {
+          color: #000000;
+        }
+      }
     }
   }
+
+  &__border {
+    border-top: 1px solid #e1e1e1;
+  }
+
+  &__rights {
+    padding: 22px 0 25px 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    max-width: 140px;
+    line-height: 1.5;
+    text-align: center;
+    color: #907e82;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__container {
+      padding: 158px 36px 91px 36px;
+      @include flex-row;
+      justify-content: space-between;
+
+      &-headers {
+        &-header {
+          font-size: 26px;
+          line-height: 1.154;
+          letter-spacing: 0.04em;
+          max-width: 340px;
+          padding-top: 7px;
+        }
+
+        &-span {
+          font-size: 48px;
+          line-height: 1.25;
+          letter-spacing: 0.06em;
+          max-width: 340px;
+        }
+      }
+
+      &-contact {
+        gap: 46px;
+
+        &-list {
+          padding: 0;
+          gap: 30px;
+
+          &-link {
+            font-size: 14px;
+            line-height: 1.857;
+          }
+        }
+      }
+    }
+
+    &__rights {
+      line-height: 1.857;
+      padding: 29px 0 18px 0;
+      max-width: unset;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    &__container {
+      padding: 165px 116px 97px 114px;
+
+      &-headers {
+        &-header {
+          max-width: unset;
+          font-size: 30px;
+          line-height: 1.134;
+          letter-spacing: 0.04em;
+        }
+
+        &-span {
+          max-width: unset;
+          font-size: 58px;
+          line-height: 1.138;
+          letter-spacing: 0.06em;
+        }
+      }
+
+      &-contact {
+        gap: 50px;
+
+        &-list {
+          gap: 24px;
+
+          &-link {
+            font-size: 16px;
+            line-height: 2.143;
+            letter-spacing: 0.02em;
+            padding-bottom: 1px;
+          }
+        }
+      }
+    }
+
+    &__rights {
+      line-height: 1.857;
+      padding: 9px 0 10px 0;
+    }
+  }
+}
