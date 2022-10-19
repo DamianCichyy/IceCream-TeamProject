@@ -6,15 +6,15 @@
 }
 .grid-container__card {
   width: 220px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
   background-color: $white;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
 .grid-container__card-list {
-  padding: 25px 21px 43px 20px;
+  padding: 5px 21px 43px 20px;
 }
 .header-card {
   font-family: $primary-font-family;
@@ -65,7 +65,7 @@
 }
 .grid-container__border-bottom {
   border-bottom: 1px solid $light-grey;
-  margin: 25px 0 25px;
+  padding-bottom: 25px;
 }
 .open-days {
   font-family: $primary-font-family;
@@ -74,12 +74,24 @@
   line-height: 186%;
   color: $black;
 }
+.open-days-1 {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: $black;
+  padding-top: 25px;
+}
 .open-hours {
   font-family: $primary-font-family;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   color: $dark-pink;
+  padding-bottom: 10px;
+}
+.contact {
+  padding-top: 25px;
 }
 .contact-info {
   font-family: $primary-font-family;
@@ -89,6 +101,9 @@
   color: $grey;
 }
 .btn-locations {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 161.45px;
   height: 44px;
   background-color: $button-red;
@@ -104,6 +119,9 @@
   align-items: center;
 }
 .btn-franchise {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 10px;
   width: 161px;
   height: 44px;
@@ -135,9 +153,35 @@
   color: $white;
   cursor: pointer;
 }
+.btn-locations:hover svg {
+  stroke: $red;
+}
+.btn-franchise:hover svg {
+  stroke: $white;
+}
+.btn-svg-locations {
+  fill: none;
+  stroke: $white;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 6.4;
+  width: 4.28px;
+  height: 8px;
+  margin-left: 8px;
+}
+.btn-svg-franchise {
+  fill: none;
+  stroke: $red;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 6.4;
+  width: 4.28px;
+  height: 8px;
+  margin-left: 13.17px;
+}
 @media (min-width: 768px) {
   .page-container {
-    background: linear-gradient(180deg, $white 18%, $bgcolor-contacts 18%, $bgcolor-contacts 100%);
+    background: linear-gradient(180deg, $white 12%, $bgcolor-contacts 12%, $bgcolor-contacts 100%);
   }
   .grid-container {
     width: 100%;
@@ -147,10 +191,10 @@
   }
   .grid-container__card {
     width: 220px;
-    margin: 0 20px 0 0;
+    margin: 0 10px;
   }
   .grid-container__card-list {
-    padding: 50px 44px 50px 31px;
+    padding: 0 44px 50px 31px;
   }
   .header-card {
     font-family: $primary-font-family;
@@ -184,13 +228,19 @@
     line-height: 166%;
   }
   .grid-container__border-bottom {
-    margin: 30px 0 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $light-grey;
+  }
+  .open-days-1 {
+    font-size: 14px;
+    padding-top: 30px;
   }
   .open-days {
     font-size: 14px;
   }
   .open-hours {
     font-size: 14px;
+    padding-bottom: 16px;
   }
   .contact-info {
     font-size: 14px;
@@ -224,7 +274,7 @@
 }
 @media (min-width: 1280px) {
   .page-container {
-    background: linear-gradient(180deg, $white 20%, $bgcolor-contacts 20%, $bgcolor-contacts 100%);
+    background: linear-gradient(180deg, $white 18%, $bgcolor-contacts 18%, $bgcolor-contacts 100%);
   }
   .grid-container {
     width: 100%;
@@ -281,13 +331,18 @@
     line-height: 183%;
   }
   .grid-container__border-bottom {
-    margin: 32px 0 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $light-grey;
+  }
+  .open-days-1 {
+    font-size: 16px;
   }
   .open-days {
     font-size: 16px;
   }
   .open-hours {
     font-size: 16px;
+    padding-bottom: 15px;
   }
   .contact-info {
     font-size: 16px;
