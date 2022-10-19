@@ -1,5 +1,5 @@
 (() => {
-  const links = document.querySelectorAll('.header  ul a, .mobile__container-nav-link');
+  const links = document.querySelectorAll('.header  ul a, .mobile__container-nav-link, .up');
   const mobileMenu = document.querySelector('.js-menu-container');
   const closeMenuBtn = document.querySelector('.js-close-menu');
 
