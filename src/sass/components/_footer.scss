@@ -1,7 +1,11 @@
 .footer {
   background-color: $section-pink;
 }
+
 .header__logo-header-footer {
+
+.header__logo-header {
+
   font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -9,22 +13,18 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $dark-pink;
-  margin-top: 113px;
-  max-width: 232px;
 }
 .header__logo-header-span-footer {
   margin-top: 17px;
   font-size: 34px;
   color: #d41443;
   line-height: 0.959;
-  max-width: 200px;
 }
 .footer__social-media-icons {
   margin-top: 43px;
   display: flex;
   justify-content: end;
   gap: 28.24px;
-  padding-bottom: 46px;
 }
 .footer__social-media-icon {
   fill: $white;
@@ -43,17 +43,8 @@
   cursor: pointer;
 }
 .under-footer {
-  // max-width: 150px;
-  border-top: 1px solid $light-grey;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 152%;
-  text-align: center;
-  color: $grey;
-  padding: 22px 91px 25px 79px;
-}
-.contacts {
   display: flex;
+
   justify-content: right;
   padding-bottom: 43px;
 }
@@ -103,21 +94,14 @@
 }
 .under-footer {
   // max-width: 150px;
+
+  height: 89px;
+  padding-left: 79px;
+  padding-right: 91px;
+
   border-top: 1px solid $light-grey;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 152%;
-  text-align: center;
-  color: $grey;
-  padding: 22px 91px 25px 79px;
-}
-.contacts {
-  display: flex;
-  justify-content: right;
-  padding-bottom: 43px;
-}
-.contact-info {
   font-family: $primary-font-family;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 186%;
@@ -155,21 +139,24 @@
     height: 34px;
     border-radius: 50%;
     cursor: pointer;
+
+  font-weight: map-get($font-weight, bold);
+  font-size: map-get($font-size, secondary);
+  line-height: 152%;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+
   }
-  .under-footer {
-    // max-width: 150px;
-    border-top: 1px solid $light-grey;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 186%;
-    text-align: center;
-    color: $grey;
-    padding: 9px 502px 10px 502px;
+  @media screen and (min-width: 768px) {
+    .under-footer {
+      height: 73px;
+      padding: 0;
+    } 
   }
-  .contact-info {
-    font-size: 16px;
-    line-height: 186%;
-    padding-right: 3px;
-    letter-spacing: 0.02em;
+  @media screen and (min-width: 1200px) {
+    .under-footer {
+      height: 45px;
+      padding: 0;
+    }
   }
-}
